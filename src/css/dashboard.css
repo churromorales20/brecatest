@@ -1,0 +1,12 @@
+.dashboard-row{
+  text-align: center;
+}
+.internal-card{
+  padding:5px;
+}
+.card-margin{
+  margin-bottom: 1rem;
+}
+.blue-spinner{
+  color: #0062cc;
+}
