@@ -21,7 +21,7 @@ class Marketing extends Component {
     this.onChangePresent = this.onChangePresent.bind(this);
   }
   componentDidMount() {
-    axios.get('http://localhost:4000/dashboard/marketingscreen')
+    axios.get('http://149.56.94.138:4000/dashboard/marketingscreen')
       .then(res => {
         this.setState({
           venues: res.data.venues,

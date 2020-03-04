@@ -22,7 +22,7 @@ class VenuesSales extends Component {
     loaded: false,
   }
   componentDidMount() {
-    axios.get('http://localhost:4000/dashboard/bestsellers')
+    axios.get('http://149.56.94.138:4000/dashboard/bestsellers')
       .then(res => {
         let venues_historic = [];
         let venues_lmonth = [];

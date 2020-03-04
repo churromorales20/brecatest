@@ -36,21 +36,21 @@ export default class Create extends Component {
       visits_tenant: [],
     }
     componentDidMount() {
-      axios.get('http://localhost:4000/dashboard/socialpopular')
+      axios.get('http://149.56.94.138:4000/dashboard/socialpopular')
         .then(res => {
           this.setState({
             loaded_social: true,
             social_top: res.data.likes_tenant.sort(compare_social)
           });
         });
-      axios.get('http://localhost:4000/dashboard/popularvisits')
+      axios.get('http://149.56.94.138:4000/dashboard/popularvisits')
       .then(res => {
         this.setState({
           loaded_visits: true,
           visits_top: res.data.visits.sort(compare_visits)
         });
       });
-      axios.get('http://localhost:4000/dashboard/tenantvisits')
+      axios.get('http://149.56.94.138:4000/dashboard/tenantvisits')
       .then(res => {
         this.setState({
           loaded_visits_tenant: true,
